@@ -1,0 +1,22 @@
+﻿@model IEnumerable<P016_UrunTanitim.Models.Urun>
+
+<br />
+<table class="table">
+	<tr>
+		<th>Sıra No</th>
+		<td>Ürün Kodu</td>
+		<td>Ürün Tanım</td>
+		<td>Miktar</td>
+		<td>Ürün Tür</td>
+	</tr>
+	@foreach (var item in Model)
+	{
+		<tr>
+			<td>@item.Id</td>
+			<td>@item.UrunKodu</td>
+			<td>@item.UrunTanim</td>
+			<td>@item.Miktar</td>
+			<td>@item.UrunTur</td>
+		</tr>
+	}
+</table>
